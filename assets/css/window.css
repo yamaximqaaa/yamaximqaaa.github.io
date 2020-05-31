@@ -1,0 +1,73 @@
+.modalbackground {
+margin: 0; /* убираем отступы */
+padding: 0; /* убираем отступы */
+position: fixed; /* фиксируем положение */
+top:0; /* растягиваем блок по всему экрану */
+bottom:0;
+left:0;
+right:0;
+background: rgba(0,0,0,0.5); /* полупрозрачный цвет фона */
+z-index:100; /* выводим фон поверх всех слоев на странице браузера */
+opacity:0; /* Делаем невидимым */
+pointer-events: none; /* элемент невидим для событий мыши */
+}
+
+/*  модальное окно  */
+.modalbackground:target {
+    opacity: 1; /* делаем окно видимым */ 
+    pointer-events: auto; /* элемент видим для событий мыши */
+}
+
+/* ширина диалогового окна и его отступы от экрана */
+.modalwindow {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 10% auto;
+    padding: 5%;
+    background: #fff;
+    border-radius: 3px;
+}
+.modalwindow h1 {
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    padding: 2%;
+    margin-top: -35%;
+    margin-left: 18%;
+}
+
+/* настройка заголовка */
+.modalwindow h2 {
+padding: 0;
+color: rgb(228, 15, 15);
+text-align: center;
+}
+
+/* оформление сообщение */
+.modalwindow p {
+padding: 0;
+margin: 4% 0 8% 0;
+color:gray;
+text-align: center;
+}
+
+/* вид кнопки */
+.modalwindow a {
+
+display: block;
+color: #fff;
+background: rgb(238, 23, 16);
+padding: 3%;
+margin: 0 auto;
+width: 50%;
+border-radius: 3px;
+text-align: center;
+text-decoration: none;
+}
+
+/* вид кнопки при наведении на нее мыши */
+.modalwindow a:hover {
+background: rgb(245, 64, 32);
+}
