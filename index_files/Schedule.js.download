@@ -1,0 +1,34 @@
+﻿try {
+    var width = $(window).width();
+
+    if (width < 768) {
+
+        var isMobileDefined = window.location.search.indexOf("mobile") > 0;
+
+        if (isMobileDefined == false) {
+            window.location.search += "&mobile=true";
+        }
+    }
+}
+catch (e) {
+    console.log(e);
+}
+
+$(document).ready(function () {
+
+    var backlightedDays = $('.day_backlight');
+
+    var closestPair = $('.closest_pair');
+    var currentPair = $('.current_pair');
+
+    if (currentPair && currentPair[0]) {
+        $(currentPair[0]).scrollView();
+    }
+    else if (closestPair && closestPair[0]) {
+        $(closestPair[0]).scrollView();
+    }
+    else if (backlightedDays && backlightedDays[0]) {
+        $(backlightedDays[0]).scrollView();
+    }
+});
+
