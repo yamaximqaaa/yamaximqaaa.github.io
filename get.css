@@ -1,0 +1,146 @@
+body
+{
+  font-family : Tahoma, Verdana, Sans;
+  background : #BBF;
+  margin : 1em;
+}
+
+th
+{
+  border-bottom : 1px blue solid;
+  border-right : 1px blue solid;
+  padding : 0 0.5em;
+}
+
+table
+{
+  border-collapse : collapse;
+  border-radius : 2px;
+}
+
+table td
+{
+  padding : 0;
+}
+
+table#list
+{
+  margin : 1em 0;
+}
+
+table#list, table#dtls
+{
+  border : 2px blue solid;
+}
+
+table#list tr#id_0
+{
+  display : none;
+  background-color : #79F;
+}
+
+table#list tr#id_0.show
+{
+  display : table-row;
+}
+
+table#list td, table#dtls td
+{
+  padding : 0.125em 0.5em;
+}
+
+table#list td, table#list th
+{
+  border-right : 1px blue solid;
+}
+
+table#list td:first-child
+{
+  text-align : right;
+}
+
+table#list td input
+{
+  padding : 0;
+  margin-right : 0.25em;
+  max-width : 1.5em;
+}
+
+table#dtls td
+{
+  border-bottom : 1px blue solid;
+}
+
+table#dtls td:first-child
+{
+  font-weight : bold;
+}
+
+table.ctrl, table.load
+{
+  margin-left : 1em;
+}
+
+table.ctrl td, table.load td
+{
+  padding : 0.5em 0;
+}
+
+table.ctrl input[type='button']
+{
+  width : 8em;
+}
+
+table.load input[type='button']
+{
+  width : 10em;
+}
+
+input[type='button']
+{
+  width : 10em;
+}
+
+td input[type='text']
+{
+  min-width : 20em;
+}
+
+td input[readonly]
+{
+  background : unset;
+}
+
+td input[name='id']
+{
+  text-align : right;
+}
+
+input[type='button']:not([disabled]):hover
+{
+  font-weight : bold;
+}
+
+input[name='make'], input[name='seed']
+{
+  margin-top : 0.5em;
+  color : blue;
+}
+
+input[name='wipe'], input[name='drop']
+{
+  margin-top : 1em;
+  color : red;
+}
+
+#log.show
+{
+  display : inline-block;
+  margin-top : 1em;
+  padding : 0.5em;
+  border : 2px red solid;
+  color : red;
+}
+
+.hilite { background-color: lightpink;}
+#list tr:hover { cursor: pointer; background-color: lightpink; }
